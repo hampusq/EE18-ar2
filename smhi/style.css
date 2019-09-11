@@ -1,0 +1,21 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    text-align: left;
+}
+
+th, td {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+}
+
+th {
+    font-size: 16px;
+}
+
+img {
+    width: 50px;
+    padding: 0px;
+}
