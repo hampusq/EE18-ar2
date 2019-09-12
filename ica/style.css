@@ -1,0 +1,35 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+table {
+    text-align: left;
+    background: #ffffff;
+    border-collapse: collapse;
+}
+
+td,th {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+th {
+    padding-bottom: 5px;
+}
+
+thead {
+    background: #EB1F07;
+    color: white;
+}
+
+tfoot {
+    padding-bottom: 20px;
+    background: rgb(248, 244, 244);
+    font-weight: bold;
+}
+
+tr {
+    border: 1px solid #EEE
+}
