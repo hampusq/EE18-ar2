@@ -1,0 +1,29 @@
+body {
+    background: url("./img/jorden.jpg") center bottom no-repeat fixed black;
+    background-size: 500px;
+    font-family: 'Be Vietnam', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: red;
+    border-radius: 20px;
+}

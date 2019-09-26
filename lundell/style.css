@@ -1,0 +1,20 @@
+body {
+    background: url(./img/skane.jpg);
+    font-family: 'Be Vietnam', sans-serif;
+    text-align: left;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+img {
+    width: 150px;
+    padding: 0px;
+    margin-left: 50px;
+}
+
+h1, p  {
+    color: white;
+    margin-left: 50px;
+}

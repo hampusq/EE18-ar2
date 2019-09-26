@@ -1,0 +1,31 @@
+body {
+    background: url(./img/skane.jpg);
+    font-family: 'Be Vietnam', sans-serif;
+    text-align: left;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+img {
+    width: 150px;
+    padding: 0px;
+    margin-left: 50px;
+}
+
+h1, p  {
+    margin-left: 50px;
+    color: yellow;
+}
+
+
+p {
+    background: rgba(0, 0, 255, 0.349);
+    padding: 20px;
+    width: 400px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: orange1;
+}
+
