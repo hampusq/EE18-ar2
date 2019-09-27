@@ -1,0 +1,51 @@
+body {
+    font-family: "Gilroy", sans-serif;
+        font-weight: bold;
+}
+
+img {
+    width: 20px;
+}
+
+.lag {
+    text-align: left;
+    margin-left: 100px;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+.text {
+    color: #B2B2B2;
+}
+
+th {
+    padding: 10px;
+}
+
+table {
+    width: 1000px;
+    background: white;
+    border-collapse: collapse;
+}
+
+.nr1 {
+    background: #E73088;
+    color: white;   
+}
+
+thead, caption {
+    background: #12326E;
+    color: white;
+    font-weight: bold;
+}
+
+.varannan {
+    background: #F5F5F5
+}
+
+caption {
+    padding: 10px;
+}
