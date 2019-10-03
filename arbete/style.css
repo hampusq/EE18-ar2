@@ -1,0 +1,49 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 18px 'Gilroy', sans-serif;
+    background: url(./img/5086.jpg)
+}
+
+div {
+    width: 500px;
+    background: #2B2D42;
+    color: #EDF2F4;
+    margin: 100px auto 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 3px 5px 20px #D90429;
+}
+
+a {
+    color: #EF233C;
+    text-decoration: none;
+}
+
+div:hover {
+    background: #D90429:
+    transition: ease 2s;
+}
+
+a:hover {
+    transition: 0.5s;
+    color: rgb(4, 18, 217)
+}
+
+h1,p {
+  margin-bottom: 10px;  
+}
+
+.sida2 {
+    background: black;
+}
