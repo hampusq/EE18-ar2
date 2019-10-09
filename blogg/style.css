@@ -10,14 +10,20 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 
-
+/* CSS Clearflix */
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
 body {
     font: 18px 'Gilroy', sans-serif;
 }
 
 div {
     color: #2B2D42;
-    text-align: center;
     padding-bottom: 25px;
 }
 
@@ -30,11 +36,12 @@ div {
 
 .datum {
     font-weight: bold;
+    text-align: center;
 }
 
 .inlagg {
-    width: 375px;
-    box-shadow: 10px 10px 10px #2B2D42;
+    width: 600px;
+    background: linear-gradient(90deg, rgba(236,236,236,1) 0%, rgba(248,248,248,1) 100%);
     margin: 30px auto 15px auto;
     padding: 50px;
     border-radius: 10px;
@@ -45,22 +52,47 @@ h1 {
     margin-top: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: #2B2D42;
+    background: linear-gradient(125deg, rgba(43,45,66,1) 0%, rgba(56,59,83,1) 100%);
+
     color: #EDF2F4;
     border-radius: 30px;
+    text-align: center;
 }
 
 h2 {
-    margin: 15px 0px 15px 0px
+    margin: 15px 0px 15px 0px;
+    text-align: center;
 }
 
 img {
     width: 200px;
     margin-top: 50px;
     border-radius: 10px;
+    height: 250px;
 }
 
 .sidfot {
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin: 15px 0px 15px 0px;
+}
+
+.right {
+    float: right;
+    margin-left: 10px;
+}
+
+.left {
+    float: left;
+    margin-right: 10px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+hr {
+    clear: both;
+    visibility: hidden;
 }
