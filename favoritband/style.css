@@ -1,0 +1,104 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+$color1: rgba(43, 45, 66, 1);
+$color2: rgba(141, 153, 174, 1);
+$color3: rgba(237, 242, 244, 1);
+$color4: rgba(239, 35, 60, 1);
+$color5: rgba(217, 4, 41, 1); 
+*/
+body {
+    font-family: 'Gilroy', sans-serif;
+    background: #2B2D42;
+}
+
+.container {
+    margin: 0px auto;
+    width: 900px;
+    padding: 50px;
+    color: #EDF2F4;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #EDF2F4;
+}
+
+img {
+    width: 250px;
+}
+
+ul {
+    padding: 20px;
+}
+
+/* Menu style */
+
+.container .menu li {
+    list-style-type: none;
+    display: inline;
+
+}
+
+.container h1 {
+    color: #EDF2F4;
+    font-size: 100px;
+    margin: 100px;
+}
+
+.container h2 {
+    color: #EDF2F4;
+    font-size: 30px;
+    margin: 50px;
+}
+
+.container .menu a {
+    background-color: #242537;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
+    width: 125px;
+    display: inline-block;
+}
+.container .menu a:hover {
+    background-color: #EF233C;
+    transition: ease 0.5s;
+}
+
+.container .menu .current-page {
+    background-color: #EF233C;
+}
+
+/* Bilden */
+
+.container figure {
+    padding: 20px;
+    background: #242537;
+    border-radius: 20px;
+}
+
+.container .sidfot a {
+    color: #D90429;
+    font-style: italic;
+}
+
+.container .sidfot {
+    color: #EDF2F4;
+    margin-top: 20px;
+}
+
+.container p {
+    text-align: left;
+    margin-left: 40px;
+}
