@@ -1,0 +1,53 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Navigation Bar */
+.container .nav-bar li {
+    display: inline;
+    margin-left: 0;
+}
+
+.container .nav-bar .active li a {
+    color: #F7A600;
+}
+
+.container .nav-bar li a {
+    text-decoration: none;
+}
+
+.container .nav-bar {
+    margin-left: 100px;
+}
+
+/* Text, h1, h2, h3.. etc */
+
+.container .grid .product h1, h2, h3, a {
+    color: #682F1C;
+}
+.container .grid .product h2 {
+
+}
+.container .grid .product h3 {
+
+}
+.container .grid .product img {
+
+}
+
+
+/* Grid */

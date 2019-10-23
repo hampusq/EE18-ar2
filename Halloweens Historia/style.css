@@ -1,0 +1,90 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    background: url(./img/pattern3.png) #14213D;
+    background-repeat: repeat;
+
+}
+
+/* Nav Bar */
+.body-container .navbar .active {
+    color: #FCA311;
+}
+
+.body-container .navbar li {
+    color: #E5E5E5;
+    font-size: 20px;
+    margin-left: 0px;
+    display: inline;
+    padding: 20px;
+}
+
+.body-container .navbar ul {
+    margin-top: 10px;
+
+}
+
+.body-container .navbar h1 {
+    color: #E5E5E5;
+    float: left;
+    margin-left: 18px;
+}
+
+
+.body-container .navbar a {
+    text-decoration: none;
+    color: #E5E5E5;
+}
+
+.navbar {
+    background: #14213D;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 20px;
+}
+
+
+/* Nav Bar Slutar */
+
+/* Body/Info texten */
+
+.container .maintext h1 {
+    font-size: 150px;
+    color: #FCA311;
+    text-align: left;
+    padding: 0px;
+    margin-left: 30px;
+}
+.container .wikipediatext p {
+    margin-left: 40px;
+    color: #FCA311;
+    font-size: 35px;
+    width: 50%;
+}
+.container .maintext2 h1 {
+    font-size: 100px;
+    color: #E5E5E5;
+    text-align: left;
+    padding: 0px;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+.container .wikipediatext2 p {
+    margin-left: 40px;
+    color: #E5E5E5;
+    font-size: 35px;
+    width: 50%;
+}
