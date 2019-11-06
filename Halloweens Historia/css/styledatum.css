@@ -13,22 +13,33 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 
 body {
     font-family: 'Gilroy', sans-serif;
-    background: url(./img/pattern3.png) #14213D;
+    background: url(../img/pattern3.png) #14213D;
     background-repeat: repeat;
 
 }
 
 /* Nav Bar */
 .body-container .navbar .active {
+    background: rgb(34, 49, 82);
+    padding: 15px;
     color: #FCA311;
 }
 
+.body-container .navbar .active a {
+    color: #FCA311;
+}
+
+.body-container .navbar li:hover {
+    transition: ease 0.5s;
+    background: rgb(34, 49, 82);
+}
 .body-container .navbar li {
     color: #E5E5E5;
     font-size: 20px;
     margin-left: 0px;
     display: inline;
-    padding: 20px;
+    padding: 15px;
+    border-radius: 20px;
 }
 
 .body-container .navbar ul {
@@ -42,10 +53,10 @@ body {
     margin-left: 18px;
 }
 
-
 .body-container .navbar a {
     text-decoration: none;
     color: #E5E5E5;
+    width: 33%;
 }
 
 .navbar {
@@ -55,21 +66,20 @@ body {
     padding: 20px;
 }
 
-
 /* Nav Bar Slutar */
 
 /* Body/Info texten */
 
 .container .maintext h1 {
     font-size: 150px;
-    color: #FCA311;
+    color: #E5E5E5;
     text-align: left;
     padding: 0px;
     margin-left: 30px;
 }
 .container .wikipediatext p {
     margin-left: 40px;
-    color: #FCA311;
+    color: #E5E5E5;
     font-size: 35px;
     width: 50%;
 }
@@ -87,4 +97,21 @@ body {
     color: #E5E5E5;
     font-size: 35px;
     width: 50%;
+}
+
+/* Sidfot */
+
+.body-container .sidfot {
+    margin-left: 40px;
+    color: #FCA311;
+    font-size: 15px;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+
+.body-container .sidfot a {
+    color: #FCA311;
+    font-style: italic;
 }
