@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Java</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Intro till Javascript</h1>
+    <script>
+        // Slumpa två tal 1-10
+        var tal1 = Math.ceil(Math.random() * 3);
+        var tal2 = Math.ceil(Math.random() * 3);
+
+        console.log(tal1);
+        console.log(tal2);
+
+        // Räkna ut dom två talen
+        var rattsvar = tal1 + tal2;
+
+        // Läs in gissning av användaren
+        var svar = prompt("Vad är " + tal1 + " + " + tal2);
+
+        //  Är gissning = summa?
+        if (svar == rattsvar) {
+            //  Rätt svar
+            alert("Du gissade rätt")
+        } else {
+            //  Fel svar
+            location.replace("https://www.google.com");
+        }
+    </script>
+</body>
+</html>

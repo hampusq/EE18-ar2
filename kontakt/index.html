@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kontakt</h1>
+        <form action="kontakt.php" method="post">
+            <label for="fname">Förnamn</label>
+            <input id="fname" type="text" placeholder="Ditt förnamn" required>
+
+            <label for="lname">Efternamn</label>
+            <input id="lname" type="text" placeholder="Ditt efternamn" required>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="exempel@exempel.com" required>
+
+            <label for="tnummer">Telefon</label>
+            <input id="tnummer" type="tel" placeholder="123 123 123" required>
+
+            <label for="gadress">Gatuadress</label>
+            <input id="gadress" type="text" placeholder="Din adress">
+
+            <label for="postnummer">Postnummer</label>
+            <input id="postnummer" type="text" placeholder="Tex 123 34">
+
+            <label for="postadress">Postadress</label>
+            <input id="postadress" type="text" placeholder="Tex Stockholm">
+
+            <label>Kön</label>
+            <div class="kon">
+                <label for="man"><input type="radio" name="kon" id="man"> Man</label>
+                <label for="kvinna"><input type="radio" name="kon" id="kvinna"> Kvinna</label>
+                <label for="annat"><input type="radio" name="kon" id="annat"> Anant</label>
+            </div>
+
+            <label>Kön</label>
+            <div class="kon">
+                <label for="gluten"><input type="checkbox" name="kon" id="gluten"> Gluten</label>
+                <label for="laktos"><input type="checkbox" name="kon" id="laktos"> Laktos</label>
+                <label for="nötter"><input type="checkbox" name="kon" id="nötter"> Nötter</label>
+            </div>
+
+            <label for="kommun">Kommun</label>
+            <select id="kommun">
+                <option value="">Stockholm</option>
+                <option value="" selected>Vallentuna</option>
+                <option value="">Täby</option>
+                <option value="">Stockholm</option>
+            </select>
+
+            <label for="kommentar">Kommentar</label>
+            <textarea id="kommentar"></textarea>
+            <button>Skicka</button>
+
+        </form>
+    </div>
+</body>
+</html>
