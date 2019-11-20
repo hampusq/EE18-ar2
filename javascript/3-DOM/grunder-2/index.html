@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>I rörelse</h1>
+        <p>Den mätta dagen, den är aldrig störst.<br>
+            Den bästa dagen är en dag av törst.</p>
+    
+        <p>Nog finns det mål och mening i vår färd -<br>
+            men det är vägen, som är mödan värd.</p>
+    
+            <button onclick="stylaRubriker()">Styla rubriker</button>
+            <button onclick="stylaP()">Ändra p</button>
+    <script>
+        function stylaRubriker() {
+            // Hitta elementet som ör skapat av taggen H1
+            const elementH1 = document.querySelector("h1");
+
+            // Ända textfärg på elementet till röd
+            elementH1.style.color = "red";
+
+            // Ändra rubrikens textstorlek till 60px
+            elementH1.style.fontSize = "60px";
+
+            // Ändra typsnitt på rubriken till courier
+            elementH1.style.fontFamily = "Courier";
+        }
+        function stylaP() {
+            // Hitta elementet som ör skapat av taggen H1
+            const elementP = document.querySelector("p");
+
+            // Lägg till 30px padding
+            elementP.style.padding = "30px";
+
+            // Ändra rubrikens textstorlek till 5px
+            elementP.style.fontSize = "5px";
+
+            // Ändra typsnitt på rubriken till Comic Sans
+            elementP.style.fontFamily = "Comic Sans MS";
+        }
+    </script>
+
+</body>
+</html>

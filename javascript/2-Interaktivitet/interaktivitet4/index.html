@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="//cdn.rawgit.com/gibbok/animatelo/1.0.3/dist/animatelo.min.js"></script>
+
+    <title>Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onclick="prova()">
+    <div class="kontainer">
+        <h1>I rörelse</h1>
+        <p>Den mätta dagen, den är aldrig störst.<br>
+            Den bästa dagen är en dag av törst.</p>
+
+        <p>Nog finns det mål och mening i vår färd -<br>
+            men det är vägen, som är mödan värd.</p>
+
+        <p>Det bästa målet är en nattlång rast,<br>
+            där elden tänds och brödet bryts i hast.</p>
+
+        <p>På ställen, där man sover blott en gång,<br>
+            blir sömnen trygg och drömmen full av sång.</p>
+
+        <p>Bryt upp, bryt upp! Den nya dagen gryr.<br>
+            Oändligt är vårt stora äventyr.</p>
+
+        <img src="./img/fire.jpg" alt="eld">
+
+        <button onclick="jello()">Jello</button>
+        <button onclick="flip()">Text</button>
+        <button onclick="pulse()">bild</button>
+        <button onmouseover="flash()">div</button>
+    </div>
+    <script>
+        function jello() {
+            window.animatelo.rotateOutUpLeft("h1");
+        }
+
+        function flip() {
+            window.animatelo.headShake("p");
+        }
+
+        function pulse() {
+            window.animatelo.pulse("img");
+        }
+
+        function flash() {
+            window.animatelo.flash(".kontainer");
+        }
+
+        function prova() {
+            window.animatelo.flash("body");
+        }
+    </script>
+</body>
+</html>

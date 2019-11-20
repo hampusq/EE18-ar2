@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>I rörelse</h1>
+        <p id="p1">Den mätta dagen, den är aldrig störst.<br>
+            Den bästa dagen är en dag av törst.</p>
+
+        <p id="p2">Nog finns det mål och mening i vår färd -<br>
+            men det är vägen, som är mödan värd.</p>
+
+
+        <img src="../img/fire.jpg" alt="eld">
+
+        <button id="b1" onclick="mörkt()">Mörkt Läge</button>
+        <button id="b2" onclick="ljust()">Ljust Läge</button>
+    </div>
+    <script>
+        function mörkt() {
+            // Hitta alla element som vi ska jobba med
+
+            // Div, h1, p, p2, button, button2
+
+            const elementBox = document.querySelector(".kontainer");
+            const elementH1 = document.querySelector("h1");
+            const elementP1 = document.querySelector("#p1");
+            const elementP2 = document.querySelector("#p2");
+            const elementKnapp1 = document.querySelector("#b1");
+            const elementKnapp2 = document.querySelector("#b2");
+            const elementIMG = document.querySelector("img");
+
+            // Bakgrund
+            document.body.style.backgroundColor = "#344955";
+            elementBox.style.backgroundColor = "#232F34";
+
+            // Text Bakgrund
+            elementP1.style.backgroundColor = "#232F34";
+            elementP2.style.backgroundColor = "#232F34";
+            elementIMG.style.backgroundColor = "#232F34";
+
+            // Text Färg
+            elementH1.style.color = "white"
+            elementP1.style.color = "white"
+            elementP2.style.color = "white"
+
+            // Knappar Färg
+            elementKnapp1.style.backgroundColor = "#6200EE"
+            elementKnapp2.style.backgroundColor = "#6200EE"
+
+            elementKnapp1.style.color = "white"
+            elementKnapp2.style.color = "white"
+        }
+
+        function ljust() {
+                        // Hitta alla element som vi ska jobba med
+
+            // Div, h1, p, p2, button, button2
+
+            const elementBox = document.querySelector(".kontainer");
+            const elementH1 = document.querySelector("h1");
+            const elementP1 = document.querySelector("#p1");
+            const elementP2 = document.querySelector("#p2");
+            const elementKnapp1 = document.querySelector("#b1");
+            const elementKnapp2 = document.querySelector("#b2");
+            const elementIMG = document.querySelector("img");
+
+            // Bakgrund
+            document.body.style.backgroundColor = "#FFF";
+            elementBox.style.backgroundColor = "#F0F0F0";
+
+            // Text Bakgrund
+            elementP1.style.backgroundColor = "#F0F0F0";
+            elementP2.style.backgroundColor = "#F0F0F0";
+            elementIMG.style.backgroundColor = "#F0F0F0";
+
+            // Text Färg
+            elementH1.style.color = "black"
+            elementP1.style.color = "black"
+            elementP2.style.color = "black"
+
+            // Knappar Färg
+            elementKnapp1.style.backgroundColor = "#F9AA33"
+            elementKnapp2.style.backgroundColor = "#F9AA33"
+
+            elementKnapp1.style.color = "white"
+            elementKnapp2.style.color = "white"
+
+            
+        }
+    </script>
+
+</body>
+</html>

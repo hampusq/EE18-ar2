@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>I rörelse</h1>
+        <p>Den mätta dagen, den är aldrig störst.<br>
+            Den bästa dagen är en dag av törst.</p>
+    
+        <p>Nog finns det mål och mening i vår färd -<br>
+            men det är vägen, som är mödan värd.</p>
+    
+            <img src="../img/fire.jpg" alt="eld">
+    
+        <button onclick="mörkt()">Mörkt Läge</button>
+        <button onclick="ljust()">Ljust Läge</button>
+    </div>
+    <script>
+    function mörkt() {
+        document.body.style.backgroundColor = "#000";
+        document.title = "mörkt läge"
+    }
+    function ljust() {
+        document.body.style.backgroundColor = "#fff";
+    }
+    function radera() {
+        document.body.innerHTML = '<img src="../img/fire.jpg" alt="eld">';
+    }
+    </script>
+
+</body>
+</html>
