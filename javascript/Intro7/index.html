@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Java</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Intro till Javascript</h1>
+    <script>
+        // Dagenbs datum
+        var idag = new Date();
+
+        // Läs in in ålder
+        var födelseDatum = prompt("När är du född? (ÅR-MÅNAD-DAG)")
+
+        //  Omvandla till ett Date-objekt
+        var född = new Date(födelseDatum);
+
+        // Räkna ut antal år... mellan födelsedatum och idag
+        // console.log(idag.getFullYear());
+
+        var antalÅr = idag.getFullYear() - född.getFullYear();
+
+        // Skottår ger problem
+        var antalMånader = idag.getMonth() - född.getMonth();
+        var antalDagar = idag.getDate() - född.getDate();
+
+
+        if (antalMånader < 0) {
+            antalÅr = antalÅr - 1;
+        } else {
+            if (antalMånader == 0) {
+                if (antalDagar < 0) {
+                    antalÅr = antalÅr - 1;
+                }
+
+            }
+
+        }
+
+        // Skriv ut ålder
+        alert("Du är " + antalÅr + " år gammal");
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: sans-serif;
+    margin: auto; 
+    width: 500px;
+    margin-top: 20px;
+}
+
+button {
+    background: red;
+    color: white;
+    border: 0px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+}

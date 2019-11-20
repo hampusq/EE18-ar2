@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grunder i Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lyssna på knapphändelser</h1>
+
+        <button onclick="epost()">Säkra epostadress</button>
+
+
+    </div>
+    <script>
+        function epost() {
+            //  Läs in epost
+            var epostadress = prompt("Vad är din epost adress?");
+
+            // Byt ut @ med "AT"
+            var nyEpostadress = epostadress.replace('@', '(at)');
+
+            //  Skriv ut resultatet
+            alert(nyEpostadress);
+        }
+    </script>
+</body>
+</html>
