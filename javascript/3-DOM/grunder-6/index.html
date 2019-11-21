@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <script src="//cdn.rawgit.com/gibbok/animatelo/1.0.3/dist/animatelo.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <script>
+        function visaText() {
+            // Hitta elementet
+            const elementRubrik = document.querySelector("h1");
+            const elementP1 = document.querySelector("#p1");
+            const elementP2 = document.querySelector("#p2");
+            const elementP3 = document.querySelector("#p3");
+
+            // Animation
+            window.animatelo.fadeIn("p")
+            window.animatelo.fadeIn("h1")
+
+            // Göra texten synlig
+            elementRubrik.hidden = false;
+
+            elementP1.hidden = false;
+            elementP2.hidden = false;
+            elementP3.hidden = false;
+            
+
+
+        }
+    </script>
+    <div class="kontainer">
+        <button onclick="visaText()">Tryck på egen risk</button>
+
+        <h1 hidden>Mera Brännvin</h1>
+        <p id="p1" hidden>
+            De e ett jävla tjatande om alkohol, som säger att de e nåt som <br>vi inte tål<br>
+            Men brännvin de nyttigt som själve fan, jajemen<br>
+            Å om våran lever slutar att fungera<br>
+            Åker vi till USA å får den opererad, ja<br>
+        </p>
+
+        <p id="p2" hidden>
+            Mera Brännvin, Mera Brännvin, Mera Brännvin, Mera Brännvin<br>
+            Mera Brännvin, bara så, Mera Brännvin, Mera Brännvin, Mera <br>Brännvin<br>
+            Mera Brännvin, Mera Brännvin, Mera Brännvin, Mera Brännvin<br>
+            Om vi svimmar någonstans får vi gratis ambulans får vi gratis <br>ambulans<br>
+            Mera Brännvin, Mera Brännvin<br>
+        </p>
+
+        <p id="p3" hidden>
+            När fredag kommer super vi som jävla svin<br>
+            Och när vi börjar spy ja då är festen fin<br>
+            För brännvin, rensar våra organ, jodå<br>
+            Och om någon svimmar av o tappar sansen<br>
+            Så betalar socialen ambulansen. ja de e sant de<br>
+        </p>
+
+
+    </div>
+</body>
+</html>

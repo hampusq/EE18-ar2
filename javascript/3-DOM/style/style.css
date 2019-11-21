@@ -100,3 +100,10 @@ body {
     background: #FFF;
     padding: 20px;
 }
+
+/* Mörkt Läge */
+
+.darkmode {
+    background: black;
+    color: white;
+}
