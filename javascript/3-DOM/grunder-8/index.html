@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer kol3">
+        <img id="bild1" src="../img/hus1.jpg" alt="hus1">
+        <img id="bild2" src="../img/hus2.jpg" alt="hus2">
+        <img id="bild3" src="../img/hus3.jpg" alt="hus3">
+        <button onclick="blink1()">Bild 1</button>
+        <button onclick="bild2()">Bild 2</button>
+        <button onclick="bild3()">Bild 3</button>
+    </div>
+    <script>
+        // Hitta element
+        const elementBild1 = document.querySelector("#bild1")
+        const elementBild2 = document.querySelector("#bild2")
+        const elementBild3 = document.querySelector("#bild3")
+
+
+        function blink1() {
+            setInterval(bild1, 500);
+        }
+        function bild1() {
+            elementBild1.classList.toggle("gråskala");
+        }
+
+        function bild2() {
+            elementBild2.classList.toggle("contrast");
+        }
+
+        function bild3() {
+            elementBild3.classList.toggle("blur");
+        }
+    </script>
+</body>
+</html>

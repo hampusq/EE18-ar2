@@ -26,15 +26,15 @@ body {
     border: 1px solid;
 }
 .kol2 {
-    margin: 1em 0;
+    margin: 1em auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 1em;
 }
 .kol3 {
-    margin: 1em 0;
+    margin: 1em auto;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
 }
 .kontainer label {
@@ -118,4 +118,14 @@ body {
 
 .kontainer .synlig {
     display: block;
+}
+
+.kontainer .brightness {
+    filter: brightness(150%)
+}
+.kontainer .contrast {
+    filter: contrast(200%);
+}
+.kontainer .blur {
+    filter: blur(20px);
 }
