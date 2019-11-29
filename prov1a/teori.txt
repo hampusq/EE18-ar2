@@ -1,0 +1,7 @@
+Get tre exempel på god praxis inom webb.
+Att man man inte ska ha stora bokstäver och Å, Ä och Ö i filnamn. Man ska inte häller använda stora bokstäver i html och css, det ska alltid vara små bokstäver. Och i css ska man alltid ha en reset efter man har importerat en font.
+
+Hur kontrollerar du din kod?
+Jag kollar om jag får några errors i visual studio code, om jag får ett error så fixar jag det på en gång. Sen kan man också kolla så att allt ser bra ut på hemsidan
+
+
