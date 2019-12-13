@@ -129,3 +129,11 @@ body {
 .kontainer .blur {
     filter: blur(20px);
 }
+
+.fel {
+    color: rgb(238, 71, 71);
+}
+
+.rott {
+    color: rgb(113, 253, 113);
+}

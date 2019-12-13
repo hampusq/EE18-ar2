@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Är du en robot?</h1>
+
+        <h2>Input</h2>
+
+        <!-- Input -->
+        <label id="gissa">Spam skydd</label>
+        <input type="text">
+
+        <button onclick="rätta()">Skicka</button>
+
+        <h2>Output</h2>
+        <p></p>
+    </div>
+
+    <script>
+        // Element vi ska jobba med
+        const elementInput = document.querySelector("input")
+        const elementGissa = document.querySelector("#gissa")
+        const elementResultat = document.querySelector("p")
+
+
+        // Slumpa fram två tal 1-10
+        var tal1 = Math.ceil(Math.random() * 4);
+        var tal2 = Math.ceil(Math.random() * 4);
+
+        // Logga talen i consolen
+        console.log(tal1);
+        console.log(tal2);
+
+        // Fråga användaren
+        elementGissa.textContent = ("Vad är " + tal1 + " + " + tal2);
+
+        // Räkna ut talet
+        var rattsvar = tal1 + tal2;
+
+        function rätta() {
+            // Läs in användarens svar
+            var svar = elementInput.value;
+
+            //  Är gissning = summa?
+            if (svar == rattsvar) {
+                //  Rätt svar
+
+                // Ändra färg på texten till grön
+                elementResultat.classList.add("rott");
+                elementResultat.classList.remove("fel");
+
+                //  Ändra på elementet P
+                elementResultat.textContent = "Rätt, du är ingen robot";
+
+            } else {
+                //  Fel svar
+
+                // Ändra färg på texten till röd
+                elementResultat.classList.add("fel");
+                elementResultat.classList.remove("rott");
+
+                // Ändra elementet P
+                elementResultat.textContent = "Fel, du är en robot, du kommer skickas till google.";
+
+
+                // Skicka användaren till google efter 3 sekunder
+                setTimeout(() => {
+                    location.replace("https://www.google.com")
+                }, 3000);
+            }
+
+        }
+    </script>
+</body>
+</html>
