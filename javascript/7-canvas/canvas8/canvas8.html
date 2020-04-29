@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="canvass.css">
+</head>
+<body>
+    <div class="kol2">
+        <canvas></canvas>
+        <div>
+            <h1>Flytta Mario</h1>
+            <div class="kol3">
+                <br><button>up</button><br>
+                <br><button>left</button><br><button>right</button>
+                <br><button>down</button><br>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Element vi jobbar med
+        const eCanvas = document.querySelector("canvas");
+
+        // Sätt om nredd pcj häjd på canvas
+        eCanvas.width = 1200;
+        eCanvas.height = 1000;
+    </script>
+</body>
+</html>

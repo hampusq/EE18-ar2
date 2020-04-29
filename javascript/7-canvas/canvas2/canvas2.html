@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="canvass.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        // Element vi jobbar med
+        const eCanvas = document.querySelector("canvas");
+
+        // Sätt om nredd pcj häjd på canvas
+        eCanvas.width = 800;
+        eCanvas.height = 1000;
+
+        // AKrivera ritmotor
+        var ctx = eCanvas.getContext("2d");
+
+        // Rita färgat mönster
+        
+        ctx.beginPath();
+        ctx.strokeRect(100, 100, 300, 200);
+
+        ctx.fillStyle = "darkred";
+        ctx.fillRect(100, 200, 300, 100);
+
+        ctx.moveTo();
+        ctx.lineTo();
+        ctx.lineTo();
+
+        ctx.fillStyle = "darkblue";
+        ctx.fill();
+        
+
+
+    </script>
+</body>
+</html>

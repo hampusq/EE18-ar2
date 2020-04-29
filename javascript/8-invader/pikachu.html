@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./pikachu.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        /* ****************************** */
+        /*        Ställ in canvas         */
+        /* ****************************** */
+
+        const eCanvas = document.querySelector("canvas");
+        eCanvas.width = 1200;
+        eCanvas.height = 1000;
+        var ctx = eCanvas.getContext("2d");
+
+        /* ****************************** */
+        /*     Variabler och Objekten     */
+        /* ****************************** */
+
+        /* Ladda in bilderna */
+
+        var blackwidow = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        } 
+        var capAmerica = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        } 
+
+        // Ladda in bilderna
+        blackwidow.bild.src = "./ikoner/icons8-black-widow-50.png";
+        capAmerica.bild.src = "./ikoner/icons8-captain-america-50.png";
+
+        /* ****************************** */
+        /*            Funktioner          */
+        /* ****************************** */
+
+        function ritaBlackwidow() {
+            ctx.drawImage(blackwidow.bild, blackwidow.x, blackwidow.y);
+        }
+        function ritaCapamerica() {
+            ctx.drawImage(capAmerica.bild, capAmerica.x, capAmerica.y);
+        }
+
+        /* Animationsloopen */
+        function loopen() {
+            // Sudda ut
+            ctx.clearRect(0, 0, 1200, 1000)
+
+            // Öka värder på x
+            blackwidow.y += 4;
+            ritaBlackwidow();
+
+            capAmerica.y += 5;
+            ritaCapamerica();
+
+            requestAnimationFrame(loopen);
+        }
+
+        /* ****************************** */
+        /*     Starta animationsloopen    */
+        /* ****************************** */
+        loopen();
+    </script>
+</body>
+</html>

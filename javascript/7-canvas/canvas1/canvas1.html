@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="canvass.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        // Element vi jobbar med
+        const eCanvas = document.querySelector("canvas");
+
+        // Sätt om nredd pcj häjd på canvas
+        eCanvas.width = 800;
+        eCanvas.height = 1000;
+
+        // AKrivera ritmotor
+        var ctx = eCanvas.getContext("2d");
+
+        // Rita färgat mönster
+        ctx.fillStyle = "red";
+        ctx.fillRect(50,50,50,50)
+        ctx.fillStyle = "green";
+        ctx.fillRect(100,50,50,50)
+        ctx.fillStyle = "red";
+        ctx.fillRect(150,50,50,50)
+        ctx.fillStyle = "green";
+        ctx.fillRect(200,50,50,50)
+
+        ctx.fillStyle = "green";
+        ctx.fillRect(50,100,50,50)
+        ctx.fillStyle = "red";
+        ctx.fillRect(100,100,50,50)
+        ctx.fillStyle = "green";
+        ctx.fillRect(150,100,50,50)
+        ctx.fillStyle = "red";
+        ctx.fillRect(200,100,50,50)
+
+
+        ctx.fillStyle = "blue"
+        ctx.fillRect(100,400,150,100)
+
+        ctx.fillStyle = "yellow"
+        ctx.fillRect(100,500,450,50)
+
+        ctx.fillStyle = "blue"
+        ctx.fillRect(100,550,150,100)
+
+        ctx.fillStyle = "yellow"
+        ctx.fillRect(250,400,50,250)
+
+        ctx.fillStyle = "blue"
+        ctx.fillRect(300,400,250,100)
+
+        ctx.fillStyle = "blue"
+        ctx.fillRect(300,550,250,100)
+
+        // Rita en linje
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(400, 300);
+        ctx.stroke();
+        
+
+
+    </script>
+</body>
+</html>

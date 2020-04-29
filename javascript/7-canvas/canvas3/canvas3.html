@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="canvass.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        // Element vi jobbar med
+        const eCanvas = document.querySelector("canvas");
+
+        // Sätt om nredd pcj häjd på canvas
+        eCanvas.width = 800;
+        eCanvas.height = 1000;
+
+        // AKrivera ritmotor
+        var ctx = eCanvas.getContext("2d");
+
+        // Völj en fyllnads färg
+
+        ctx.fillStyle = "lightblue";
+        ctx.strokeStyle = "black"
+
+        // Rita en rektalgel
+        ctx.fillRect(50, 50, 50, 50);
+        ctx.strokeRect(150, 50, 50, 50);
+
+
+        // Rita en fyrkant med variabler
+        var x = 150;
+        var y = 250;
+
+        ctx.fillStyle = "pink";
+        ctx.fillRect(x, y, 100, 50);
+
+        // Rita en fyrkant till
+        var x = 150;
+        var y = 350;
+
+        ctx.fillStyle = "purple";
+        ctx.fillRect(x, y, 100, 50);
+
+        // Rita text
+        ctx.font = "100px sans-serif";
+        ctx.fillText("hello world", 100, 500);
+
+        ctx.strokeText("hej på er", 100, 600)
+    </script>
+</body>
+</html>
