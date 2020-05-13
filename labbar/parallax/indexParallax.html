@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>parallax</title>
+    <link rel="stylesheet" href="parallax.css">
+</head>
+<body>
+    <div class="kontainer">
+        <div class="mid-clouds scrollElement" data-rate="-1">
+            <img src="./img/cloud-lg1.png" alt="small cloud">
+            <img src="./img/cloud-lg1.png" alt="small cloud">
+            <img src="./img/cloud-lg1.png" alt="small cloud">
+            <img src="./img/cloud-lg1.png" alt="small cloud">
+            <img src="./img/cloud-lg1.png" alt="small cloud">
+        </div>
+
+
+        <div class="back-clouds scrollElement" data-rate="-0.5">
+            <img src="./img/cloud-sm1.png" alt="small cloud">
+            <img src="./img/cloud-sm1.png" alt="small cloud">
+            <img src="./img/cloud-sm1.png" alt="small cloud">
+            <img src="./img/cloud-sm1.png" alt="small cloud">
+            <img src="./img/cloud-sm1.png" alt="small cloud">
+        </div>
+    </div>
+
+
+    <script>
+        // Element vi använder
+        const eTargets = document.querySelectorAll(".scrollElement");
+
+        // Lyssna om man skollar
+        window.addEventListener("scroll", function(e) {
+                    eTargets.forEach(function(element) {
+                        // Läs av data-rate för elementet
+                        var rate = element.dataset.rate;
+                        var orientation = element.dataset.orientation;
+
+                            // Räkna en förflyttning
+                            distance = window.pageYOffset * rate;
+
+                            // Flytta på element
+                            element.style.transform = "translateY(" + distance + "px)";
+                    });
+                })
+    </script>
+</body>
+</html>

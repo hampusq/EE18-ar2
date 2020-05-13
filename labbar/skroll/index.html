@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sida">
+        <ul>
+            <li class="scrollElement" data-rate="-1" data-orientation="f">Par</li>
+            <li class="scrollElement" data-rate="0.5" data-orientation="f">al</li>
+            <li class="scrollElement" data-rate="1">lax</li>
+        </ul>
+        <span class="scrollElement" data-rate="0.5"></span>
+    </div>
+
+    <div class="sida">
+        <img class="scrollElement" src="./img/annie-spratt-WCXBBXdnXFM-unsplash.jpg" alt="skog">
+    </div>
+
+    <script>
+        // Element vi använder
+        const eTargets = document.querySelectorAll(".scrollElement");
+
+        // Lyssna om man skollar
+        window.addEventListener("scroll", function(e) {
+            // Hur mycket skrollar man?
+            console.log(window.pageYOffset);
+
+            // Vad vet man om eTarget
+
+            // Räkna en förflyttning
+            // distance = window.pageYOffset * 0.5;
+            // console.log(distance)
+
+            // Flytta på element
+            // eTarget.style.transform = "translateY(" + distance + "px)";
+
+            // Flytta alla element: en efter en i en loop
+
+            eTargets.forEach(function(element) {
+                // Läs av data-rate för elementet
+                var rate = element.dataset.rate;
+                var orientation = element.dataset.orientation;
+
+                if (orientation == "f") {
+                    // Räkna en förflyttning
+                    distance = window.pageYOffset * rate;
+
+                    // Flytta på element
+                    element.style.transform = "translateY(" + distance + "px)";
+                } else {
+                    // Räkna en förflyttning
+                    distance = window.pageYOffset * rate;
+
+                    // Flytta på element
+                    element.style.transform = "translate3d(" + distance + "px, " + window.pageYOffset + "px, 0px)";
+                }
+
+
+            });
+
+
+        });
+    </script>
+</body>
+</html>
