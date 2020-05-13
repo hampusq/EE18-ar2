@@ -29,13 +29,23 @@ body {
 .hidden {
     visibility: hidden;
 }
+.show {
+    visibility: visible;
+}
 
 .contentItem {
     background: #FCA311;
-    padding: 50px;
+    padding: 25px;
     border-radius: 10px;
+    width: 100px;
 }
 
 .contentItem h1 {
     color: #E5E5E5;
+    height: 100px;
+    margin: 0px;
+}
+
+.content h1 {
+    font-size: 20px;
 }
