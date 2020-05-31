@@ -1,3 +1,4 @@
+// Alla element som jag använder
 const eButton = document.querySelector("#sendIn");
 const eInput = document.querySelector("#input");
 
@@ -11,6 +12,7 @@ eContent2.classList.add("hidden");
 eContent3.classList.add("hidden");
 
 
+// Det man skriver in i sökfältet
 var intresseVal = eInput.value;
 
 
@@ -19,7 +21,7 @@ eButton.addEventListener("click", function() {
     // Array med små bokstaver
     let intressenSmall = ['golf', 'fotboll', 'mma']
 
-    // Array första bokstaven stor
+    // Array där första bokstaven är stor
     let intressenBig = ['Golf', 'Fotboll', 'Mma']
 
     // Skriv ut det intresse användaren skriver in
